@@ -9,7 +9,7 @@ const string CorsPolicy = "AllowAngularDev";
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(CorsPolicy, policy =>
-        policy.WithOrigins("https://simple-form-angular.vercel.app/")
+        policy.WithOrigins("https://simple-form-angular.vercel.app")
               .AllowAnyHeader()
               .AllowAnyMethod());
 });
